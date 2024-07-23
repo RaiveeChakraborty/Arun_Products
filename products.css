@@ -47,7 +47,8 @@ html,body{
    
     
     position: relative;
-    transition: all 10s ease;
+ 
+    transform: all 2s ease;
 }
 .icecream_details{
     height: 25%;
@@ -89,7 +90,7 @@ html,body{
    
     z-index: 9;
     border-radius: 2%;
-   
+    transform: all 2s ease;
 }
 .img1{
     height: 100%;
@@ -99,6 +100,8 @@ html,body{
     object-position: center;
     z-index: 10;
     border-radius: 2%;
+    transform: all 2s ease;
+  
 }
 .icecream_container:hover .img1{
      opacity: 0;
@@ -147,6 +150,7 @@ html,body{
     .heading{
         font-size: 2vw;
         font-weight: 600;
+        margin-bottom: 2vh;
     }
     .product_whole_container{
         height: 100%;
@@ -162,7 +166,7 @@ html,body{
     .products_container{
         height: 50vh;
         width: 75vw;
-        margin: 3vh 2vw;
+        margin: 0vh 2vw;
         
         /* background-color: aqua; */
     }
@@ -184,6 +188,7 @@ html,body{
     .icecream_details h1{
         font-size: 4vw;
         font-weight: 600;
+        
     }
     .icecream_details p{
         font-size: 2.5vw;
