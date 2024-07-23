@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.products{
+    height: fit-content;
+    width: 100vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 5vh 2vw;
+  
+}
+.heading{
+    font-size: 2vw;
+    font-weight: 600;
+}
+.product_whole_container{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+.products_container{
+    height: 70vh;
+    width: 25vw;
+    margin: 3vh 2vw;
+    
+    /* background-color: aqua; */
+}
+.icecream_container{
+    height: 70%;
+    width: 100%;
+   
+    
+    position: relative;
+    transition: all 10s ease;
+}
+.icecream_details{
+    height: 25%;
+    width: 100%;
+  text-align: center;
+  margin-top: 2vh;
+  /* background-color: aqua; */
+}
+.icecream_details h1{
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.icecream_details p{
+    font-size: 1vw;
+    color: rgb(118, 116, 116);
+}
+.icecream_details button{
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    color: #fff;
+    margin-top: 1vh;
+    background-color: rgb(241, 30, 65);
+    transition: all 0.5s ease;
+}
+.icecream_details button:hover{
+    background-color: #fff;
+    color: rgb(241, 30, 65);
+ border: 0.1vw solid rgb(241, 30, 65);
+}
+
+.img2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: 50% 0%;
+   
+    z-index: 9;
+    border-radius: 2%;
+   
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: 10;
+    border-radius: 2%;
+}
+.icecream_container:hover .img1{
+     opacity: 0;
+     cursor: pointer;
+}
+.product_last{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.product-last button{
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    color: #fff;
+    margin-top: 1vh;
+    background-color: rgb(241, 30, 65);
+    transition: all 0.5s ease;
+}
+.product-last button:hover{
+    background-color: #fff;
+    color: rgb(241, 30, 65);
+ border: 0.1vw solid rgb(241, 30, 65);
+}
+
+
+
+/* responsive */
+@media only screen and (max-width:500px) {
+    .products{
+        height: fit-content;
+        width: 100vw;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        padding: 5vh 2vw;
+      
+    }
+    .heading{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .product_whole_container{
+        height: 100%;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    
+    }
+    .products_container{
+        height: 50vh;
+        width: 75vw;
+        margin: 3vh 2vw;
+        
+        /* background-color: aqua; */
+    }
+    .icecream_container{
+        height: 70%;
+        width: 100%;
+       
+        
+        position: relative;
+        transition: all 10s ease;
+    }
+    .icecream_details{
+        height: 25%;
+        width: 100%;
+      text-align: center;
+      margin-top: 2vh;
+      /* background-color: aqua; */
+    }
+    .icecream_details h1{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .icecream_details p{
+        font-size: 2.5vw;
+        color: rgb(118, 116, 116);
+    }
+    .icecream_details button{
+        padding: 1vh 3vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 2.5vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .icecream_details button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+    .img2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 0%;
+       
+        z-index: 9;
+        border-radius: 2%;
+       
+    }
+    .img1{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        z-index: 10;
+        border-radius: 2%;
+    }
+    .icecream_container:hover .img1{
+         opacity: 0;
+         cursor: pointer;
+    }
+    
+    .product_last{
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+    .product-last button{
+        padding: 1vh 3vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 2.5vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .product-last button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+}
+@media only screen and (min-width:768px) {
+    .products{
+        height: fit-content;
+        width: 100vw;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        padding: 5vh 2vw;
+      
+    }
+    .heading{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .product_whole_container{
+        height: 100%;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    
+    }
+    .products_container{
+        height:55vh;
+        width: 35vw;
+        margin: 3vh 2vw;
+        
+        /* background-color: aqua; */
+    }
+    .icecream_container{
+        height: 70%;
+        width: 100%;
+       
+        
+        position: relative;
+        transition: all 10s ease;
+    }
+    .icecream_details{
+        height: 25%;
+        width: 100%;
+      text-align: center;
+      margin-top: 2vh;
+      /* background-color: aqua; */
+    }
+    .icecream_details h1{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .icecream_details p{
+        font-size: 1.8vw;
+        color: rgb(118, 116, 116);
+    }
+    .icecream_details button{
+        padding: 1vh 3vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 2vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .icecream_details button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+    .img2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 0%;
+       
+        z-index: 9;
+        border-radius: 2%;
+       
+    }
+    .img1{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        z-index: 10;
+        border-radius: 2%;
+    }
+    .icecream_container:hover .img1{
+         opacity: 0;
+         cursor: pointer;
+    }
+    .product_last{
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+    .product-last button{
+        padding: 1vh 3vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 2vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .product-last button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+}
+@media only screen and (min-width:992px) {
+    .products{
+        height: fit-content;
+        width: 100vw;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        padding: 5vh 2vw;
+      
+    }
+    .heading{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    .product_whole_container{
+        height: 100%;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    
+    }
+    .products_container{
+        height: 70vh;
+        width: 25vw;
+        margin: 3vh 2vw;
+        
+        /* background-color: aqua; */
+    }
+    .icecream_container{
+        height: 70%;
+        width: 100%;
+       
+        
+        position: relative;
+        transition: all 10s ease;
+    }
+    .icecream_details{
+        height: 25%;
+        width: 100%;
+      text-align: center;
+      margin-top: 2vh;
+      /* background-color: aqua; */
+    }
+    .icecream_details h1{
+        font-size: 1.8vw;
+        font-weight: 600;
+    }
+    .icecream_details p{
+        font-size: 1vw;
+        color: rgb(118, 116, 116);
+    }
+    .icecream_details button{
+        padding: 1vh 2vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 1.2vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .icecream_details button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+    .img2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 0%;
+       
+        z-index: 9;
+        border-radius: 2%;
+       
+    }
+    .img1{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        z-index: 10;
+        border-radius: 2%;
+    }
+    .icecream_container:hover .img1{
+         opacity: 0;
+         cursor: pointer;
+    }
+    .product_last{
+        height: 8vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+    .product-last button{
+        padding: 1vh 2vw;
+        border: none;
+        border-radius: 2vw;
+        font-size: 1.2vw;
+        color: #fff;
+        margin-top: 1vh;
+        background-color: rgb(241, 30, 65);
+        transition: all 0.5s ease;
+    }
+    .product-last button:hover{
+        background-color: #fff;
+        color: rgb(241, 30, 65);
+     border: 0.1vw solid rgb(241, 30, 65);
+    }
+    
+}
