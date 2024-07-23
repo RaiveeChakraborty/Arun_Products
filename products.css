@@ -37,7 +37,7 @@ html,body{
 .products_container{
     height: 70vh;
     width: 25vw;
-    margin: 3vh 2vw;
+    margin: 1vh 2vw;
     
     /* background-color: aqua; */
 }
@@ -63,22 +63,24 @@ html,body{
 }
 .icecream_details p{
     font-size: 1vw;
-    color: rgb(118, 116, 116);
+    color: #fff;
+    padding: 1vh 0.5vw;
+   color: #767474;
 }
 .icecream_details button{
     padding: 1vh 2vw;
     border: none;
-    border-radius: 2vw;
+    /* border-radius: 2vw; */
     font-size: 1.2vw;
     color: #fff;
     margin-top: 1vh;
-    background-color: rgb(241, 30, 65);
+    background-color:  #767474;
     transition: all 0.5s ease;
 }
 .icecream_details button:hover{
     background-color: #fff;
-    color: rgb(241, 30, 65);
- border: 0.1vw solid rgb(241, 30, 65);
+    color: #767474;
+ border: 0.1vw solid  #767474;
 }
 
 .img2{
@@ -103,10 +105,28 @@ html,body{
     transform: all 2s ease;
   
 }
+.sold{
+    height: 12%;
+    width: 26%;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-family: sans-serif;
+    border-radius: 0.2vw;
+}
+.icecream_container:hover .sold{
+    opacity: 0;
+}
 .icecream_container:hover .img1{
      opacity: 0;
      cursor: pointer;
 }
+
 .product_last{
     height: 8vh;
     width: 100vw;
@@ -165,13 +185,13 @@ html,body{
     }
     .products_container{
         height: 50vh;
-        width: 75vw;
+        width: 40vw;
         margin: 0vh 2vw;
         
         /* background-color: aqua; */
     }
     .icecream_container{
-        height: 70%;
+        height: 60%;
         width: 100%;
        
         
@@ -179,35 +199,37 @@ html,body{
         transition: all 10s ease;
     }
     .icecream_details{
-        height: 25%;
+        height: 30%;
         width: 100%;
       text-align: center;
-      margin-top: 2vh;
+      margin-top: 0.5vh;
       /* background-color: aqua; */
     }
     .icecream_details h1{
-        font-size: 4vw;
+        font-size: 3.4vw;
         font-weight: 600;
+        font-family: sans-serif;
         
     }
     .icecream_details p{
         font-size: 2.5vw;
-        color: rgb(118, 116, 116);
+        color: #767474;
     }
     .icecream_details button{
-        padding: 1vh 3vw;
+        width: 100%;
+        padding: 1vh 0vw;
         border: none;
-        border-radius: 2vw;
+        border-radius: 0.5vw;
         font-size: 2.5vw;
         color: #fff;
-        margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        /* margin-top: 1vh; */
+        background-color: #767474;
         transition: all 0.5s ease;
     }
     .icecream_details button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color: #767474;
+     border: 0.1vw solid #767474;
     }
     
     .img2{
@@ -234,6 +256,23 @@ html,body{
          opacity: 0;
          cursor: pointer;
     }
+    .sold{
+        height: 12%;
+        width: 26%;
+        background-color: #2f2f2f;
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8vw;
+        font-family: sans-serif;
+        border-radius: 0.2vw;
+    }
+    .icecream_container:hover .sold{
+        opacity: 0;
+    }
     
     .product_last{
         height: 8vh;
@@ -244,19 +283,20 @@ html,body{
         background-color: aqua;
     }
     .product-last button{
+       
         padding: 1vh 3vw;
         border: none;
-        border-radius: 2vw;
+        /* border-radius: 2vw; */
         font-size: 2.5vw;
         color: #fff;
         margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        background-color: #767474;
         transition: all 0.5s ease;
     }
     .product-last button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color: #767474;
+     border: 0.1vw solid #767474;
     }
     
 }
@@ -290,7 +330,7 @@ html,body{
     }
     .products_container{
         height:55vh;
-        width: 35vw;
+        width: 40vw;
         margin: 3vh 2vw;
         
         /* background-color: aqua; */
@@ -311,27 +351,29 @@ html,body{
       /* background-color: aqua; */
     }
     .icecream_details h1{
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-weight: 600;
+        font-family: sans-serif;
     }
     .icecream_details p{
         font-size: 1.8vw;
         color: rgb(118, 116, 116);
     }
     .icecream_details button{
+        width: 100%;
         padding: 1vh 3vw;
         border: none;
-        border-radius: 2vw;
+        border-radius: 0.5vw;
         font-size: 2vw;
         color: #fff;
         margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        background-color: #767474;
         transition: all 0.5s ease;
     }
     .icecream_details button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color: #767474;
+     border: 0.1vw solid #767474;
     }
     
     .img2{
@@ -358,6 +400,23 @@ html,body{
          opacity: 0;
          cursor: pointer;
     }
+    .sold{
+        height: 12%;
+        width: 26%;
+        background-color: #2f2f2f;
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7vw;
+        font-family: sans-serif;
+        border-radius: 0.2vw;
+    }
+    .icecream_container:hover .sold{
+        opacity: 0;
+    }
     .product_last{
         height: 8vh;
         width: 100vw;
@@ -367,19 +426,20 @@ html,body{
         background-color: aqua;
     }
     .product-last button{
-        padding: 1vh 3vw;
+        width: 100%;
+        
         border: none;
-        border-radius: 2vw;
+        border-radius: 0.5vw;
         font-size: 2vw;
         color: #fff;
         margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        background-color: #767474;
         transition: all 0.5s ease;
     }
     .product-last button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color: #767474;
+     border: 0.1vw solid #767474;
     }
     
 }
@@ -412,7 +472,7 @@ html,body{
     
     }
     .products_container{
-        height: 70vh;
+        height: 65vh;
         width: 25vw;
         margin: 3vh 2vw;
         
@@ -434,27 +494,29 @@ html,body{
       /* background-color: aqua; */
     }
     .icecream_details h1{
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         font-weight: 600;
+        font-family: sans-serif;
     }
     .icecream_details p{
         font-size: 1vw;
         color: rgb(118, 116, 116);
     }
     .icecream_details button{
+        width: 100%;
         padding: 1vh 2vw;
         border: none;
-        border-radius: 2vw;
+        border-radius: 0.2vw;
         font-size: 1.2vw;
         color: #fff;
         margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        background-color:  #767474;
         transition: all 0.5s ease;
     }
     .icecream_details button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color:  #767474;
+     border: 0.1vw solid  #767474;
     }
     
     .img2{
@@ -481,6 +543,23 @@ html,body{
          opacity: 0;
          cursor: pointer;
     }
+    .sold{
+        height: 12%;
+        width: 26%;
+        background-color: rgb(47, 47, 47);
+        color: #fff;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;
+        font-family: sans-serif;
+        border-radius: 0.2vw;
+    }
+    .icecream_container:hover .sold{
+        opacity: 0;
+    }
     .product_last{
         height: 8vh;
         width: 100vw;
@@ -496,13 +575,13 @@ html,body{
         font-size: 1.2vw;
         color: #fff;
         margin-top: 1vh;
-        background-color: rgb(241, 30, 65);
+        background-color:#767474;
         transition: all 0.5s ease;
     }
     .product-last button:hover{
         background-color: #fff;
-        color: rgb(241, 30, 65);
-     border: 0.1vw solid rgb(241, 30, 65);
+        color: #767474;
+     border: 0.1vw solid #767474;
     }
     
-}
+} 
