@@ -48,7 +48,6 @@ html,body{
     
     position: relative;
  
-    transform: all 2s ease;
 }
 .icecream_details{
     height: 25%;
@@ -92,7 +91,7 @@ html,body{
    
     z-index: 9;
     border-radius: 2%;
-    transform: all 2s ease;
+   
 }
 .img1{
     height: 100%;
@@ -102,7 +101,7 @@ html,body{
     object-position: center;
     z-index: 10;
     border-radius: 2%;
-    transform: all 2s ease;
+     transition:all 1s ease;
   
 }
 .sold{
